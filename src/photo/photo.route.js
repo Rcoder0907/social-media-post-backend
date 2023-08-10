@@ -7,14 +7,14 @@ const photoController = require('./photo.controller');
 
 const router = express.Router();
 
-const uploadDirectory = './uploads'; // Specify the correct path
+const uploadDirectory = '../../../uploads'; // Specify the correct path
 if (!fs.existsSync(uploadDirectory)) {
   fs.mkdirSync(uploadDirectory);
 }
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, 'uploads/');
+    cb(null, '../uploads/');
   },
   filename: (req, file, cb) => {
     cb(null, Date.now() + '-' + file.originalname);

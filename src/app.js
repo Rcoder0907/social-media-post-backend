@@ -35,7 +35,7 @@ app.use(mongoSanitize());
 app.use(cors());
 
 
-app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
+app.use('/uploads', express.static(path.join(__dirname, '../../uploads')));
 
 // v1 api routes
 app.use('/', routes);
