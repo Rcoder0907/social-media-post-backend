@@ -14,3 +14,9 @@ Set the environment variables:
 ```bash
 cp ecosystem.config.example.json .ecosystem.config.json
 ```
+
+Run in Dev
+
+```bash
+yarn dev
+```
