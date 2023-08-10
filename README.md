@@ -1,5 +1,4 @@
-# photo-comment-backend
-Product to find Top 10% human vetted Tech Geeks
+# Social media post APIs
 
 Clone the repo:
 
