@@ -7,7 +7,7 @@ const photoController = require('./photo.controller');
 
 const router = express.Router();
 
-const uploadDirectory = '../../../uploads'; // Specify the correct path
+const uploadDirectory = './uploads'; // Specify the correct path
 if (!fs.existsSync(uploadDirectory)) {
   fs.mkdirSync(uploadDirectory);
 }
